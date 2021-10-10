@@ -29,7 +29,7 @@
       "lookup": "properties.NAME",
       "from": {
         "data": {
-          "url": "https://raw.githubusercontent.com/Sugarsweet9mare/FIT3179Asgn2/main/3_choropleth_map/data/exports-calendar-year_test.csv"
+          "url": "data/exports-calendar-year_test.csv"
         },
         "key": "exports",
         "fields": ["test"]
