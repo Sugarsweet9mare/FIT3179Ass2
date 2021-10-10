@@ -29,7 +29,7 @@
       "lookup": "properties.NAME",
       "from": {
         "data": {
-          "url": "https://raw.githubusercontent.com/Sugarsweet9mare/FIT3179Asgn2/main/3_choropleth_map/data/domestic-consumption_test.csv"
+          "url": "data/domestic-consumption_test.csv"
         },
         "key": "domestic_consumption",
         "fields": ["test"]
