@@ -13,12 +13,19 @@
 </head>
 <body>
   
-<div id="Domestic Consumption of Coffee"></div>
+<div id="viz 1"></div>
+<div id="viz 2"></div>
 
 <script type="text/javascript">
 
-  var spec2 = "js/domestic_consumption.vg.json";
-  vegaEmbed('#choropleth_map', spec2).then(function(result) {
+  var spec1 = "js/domestic_consumption.vg.json";
+  var spec2 = "export_yearly.vg.json";
+  
+  vegaEmbed('#viz 1', spec1).then(function(result) {
+    // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
+  }).catch(console.error);
+  
+  vegaEmbed('#viz 2', spec2).then(function(result) {
     // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
   }).catch(console.error);
 </script>
