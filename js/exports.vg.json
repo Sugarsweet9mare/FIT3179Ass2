@@ -48,7 +48,8 @@
                                 "key": "exports",
                                 "fields": ["y2018"]
                             }
-                        }
+                        },
+                        {"calculate": "datum.y2018", "as": "Yearly Export"}
                     ],
                     "projection": {
                         "type": "equirectangular"
@@ -58,13 +59,13 @@
                         },
                     "encoding": {
                         "color": {
-                        "field": "y2018",
+                        "field": "Yearly Export",
                         "type": "quantitative",
                         "scale": {"type": "linear", "scheme": "tealblues"}
                         },
                         "tooltip": [
                         {"field": "properties.NAME", "type": "nominal", "title": "Country"},
-                        {"field": "y2018", "type": "quantitative"}
+                        {"field": "Yearly Export", "type": "quantitative"}
                         ]
                     }
                 }
