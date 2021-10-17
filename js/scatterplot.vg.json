@@ -3,7 +3,7 @@
     "data": {"url": "https://raw.githubusercontent.com/Sugarsweet9mare/FIT3179Ass2/main/data/scatter_doctored.csv"},
     "width": 400,
     "height": 400,
-    "background": "#bbaf96",
+    "background": "#ebe2d1",
     "config": {"font": "Gerial"},
     "layer": [
       {
