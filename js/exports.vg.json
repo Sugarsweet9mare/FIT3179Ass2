@@ -43,13 +43,13 @@
                             "lookup": "properties.NAME",
                             "from": {
                                 "data": {
-                                "url": "https://raw.githubusercontent.com/Sugarsweet9mare/FIT3179Ass2/main/data/domestic-consumption_editted.csv"
+                                "url": "https://raw.githubusercontent.com/Sugarsweet9mare/FIT3179Ass2/main/data/exports-calendar-year_test.csv"
                                 },
                                 "key": "exports",
-                                "fields": ["y2018"]
+                                "fields": ["test"]
                             }
                         },
-                        {"calculate": "datum.y2018", "as": "Yearly Export"}
+                        {"calculate": "datum.test", "as": "Yearly Export"}
                     ],
                     "projection": {
                         "type": "equirectangular"
