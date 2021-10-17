@@ -1,9 +1,9 @@
 {
     "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
     "data": {"url": "https://raw.githubusercontent.com/Sugarsweet9mare/FIT3179Ass2/main/data/scatter_doctored.csv"},
-    "width": 600,
-    "height": 600,
-    "background": "#dadada",
+    "width": 400,
+    "height": 400,
+    "background": "#bbaf96",
     "config": {"font": "Gerial"},
     "layer": [
       {
@@ -72,7 +72,7 @@
             },
             "value": "grey"
           },
-          "size": {"value": 100},
+          "size": {"value": 150},
           "opacity": {
             "condition": {"param": "country_select", "value": 0.8},
             "value": 0.2
