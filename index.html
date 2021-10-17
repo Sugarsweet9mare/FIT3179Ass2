@@ -28,6 +28,9 @@
 
 <div style="background-color: #E4D4C8; justify-content: center;text-align: left;">
   <h1 id="label" style="padding-left: 100px; color: #2F435A; position: relative;"> Coffee Exports and Gross Opening Stocks</h1>
+  <div>
+    <div id="scatter" style="padding-right: 700;"></div>
+  </div>
 </div>
 
 
@@ -36,6 +39,17 @@
   var spec1 = "js/exports.vg.json";
   
   vegaEmbed('#viz_1', spec1).then(function(result) {
+    // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
+  }).catch(console.error);
+  
+
+</script>
+
+<script type="text/javascript">
+
+  var spec2 = "js/scatterplot.vg.json";
+  
+  vegaEmbed('#scatter', spec1).then(function(result) {
     // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
   }).catch(console.error);
   
