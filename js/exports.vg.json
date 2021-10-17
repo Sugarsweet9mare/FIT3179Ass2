@@ -14,7 +14,7 @@
         {
             "title": "Yearly Export of Coffee",
             "width": 800,
-            "height": 600,
+            "height": 400,
             "layer":[
                 {
                     "data": {
@@ -80,7 +80,7 @@
                 "url": "https://raw.githubusercontent.com/Sugarsweet9mare/FIT3179Ass2/main/data/total-exports.csv"
             },
             "width": 800,
-            "height": 300,
+            "height": 200,
             "mark": "line",
             "params": [
                 {
@@ -104,7 +104,7 @@
         {
             "title": "Domestic Consumption of Coffee",
             "width": 800,
-            "height": 600,
+            "height": 400,
 
             "layer":[
                 {
