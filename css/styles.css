@@ -9,14 +9,14 @@
 
 #label{
 	font-size: 32pt;
-	font-family: Georgia, serif;
+	font-family: Garamond, serif;
 	text-align: center;
-	font-weight: bold;
+	font-weight: normal;
 }
 
 #text{
-	font-size: 12pt;
-	font-family: Georgia, serif;
+	font-size: 14pt;
+	font-family: Garamond, serif;
 	text-align: center;
 	font-weight: normal;
 }
