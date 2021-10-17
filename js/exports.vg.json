@@ -10,7 +10,7 @@
     "config":{
         "background": "transparent"
     },
-    "vconcat":[
+    "hconcat":[
         {
             "title": "Yearly Export of Coffee",
             "width": 600,
@@ -69,36 +69,8 @@
                     }
                 }
             ]
-            
-
         },
 
-        {
-            "title": "Total Exports of Coffee Based on Year",
-            "data": {
-                "url": "https://raw.githubusercontent.com/Sugarsweet9mare/FIT3179Ass2/main/data/total-exports.csv"
-            },
-            "width": 600,
-            "height": 200,
-            "mark": "line",
-            "params": [
-                {
-                    "name": "brush",
-                    "select": {"type": "point", "on": "click", "nearest": true,"encodings": ["x"]}
-                }
-            ],
-            "encoding": {
-                "x":{
-                    "field": "Year",
-                    "type": "ordinal"
-                },
-                "y":{
-                    "field": "Total",
-                    "type": "quantitative",
-                    "title": "Total Exports"
-                }
-            }
-        },
 
         {
             "title": "Domestic Consumption of Coffee",
