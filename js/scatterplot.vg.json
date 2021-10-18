@@ -1,9 +1,9 @@
 {
     "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
     "data": {"url": "https://raw.githubusercontent.com/Sugarsweet9mare/FIT3179Ass2/main/data/scatter_doctored.csv"},
-    "width": 400,
-    "height": 400,
-    "background": "#c5acac",
+    "width": 500,
+    "height": 500,
+    "background": "#b49e9e",
     "config": {"font": "Gerial"},
     "layer": [
       {

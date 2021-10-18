@@ -1,10 +1,17 @@
 {
     "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-    "title": "Total Exports of Coffee Based on Year",
+    "title": {
+        "text": "Total Exports of Coffee Based on Year",
+        "font": "Garamond",
+        "fontSize": 30,
+        "color": "#3a5574"
+    },
     "data": {
         "url": "https://raw.githubusercontent.com/Sugarsweet9mare/FIT3179Ass2/main/data/total-exports.csv"
     },
-    "width": 600,
+    "background":"transparent",
+
+    "width": 1200,
     "height": 200,
     "mark": "line",
     "params": [

@@ -14,29 +14,65 @@
 <body id="main">
   
 <div style="background-color: #E4D4C8;">
-  <div id="label" style="padding-top: 30px; text-align: center; font-size: 50pt;color: #AB6B51;">Coffee Statistics Across The World</div>
-  <div id="label" style="padding-top: 10px; text-align: center; font-size: 24pt;color: #AB6B51;padding-bottom: 10px;">Production and Shipment of Coffee</div> 
-  <hr style="width:1200px;height:4px;border-width:0;text-align: center;color: rgb(129, 107, 81);background-color:rgb(107, 96, 112);">
+<div id="label" style="padding-top: 30px; text-align: center; font-size: 50pt;color: #AB6B51;">Coffee Statistics Across The World</div>
+<div id="label" style="padding-top: 10px; text-align: center; font-size: 24pt;color: #AB6B51;padding-bottom: 10px;">Production and Shipment of Coffee</div> 
+<hr style="width:1200px;height:4px;border-width:0;text-align: center;color: rgb(129, 107, 81);background-color:rgb(107, 96, 112);">
 
-  <div style="background-color: #D0B49F; justify-content: center; text-align: center;">
-    <div id="label" style="padding-top: 30px; color: #2F435A; text-align: center">
-      Coffee Exports and Consumption of Coffee
-    </div>
-    <div id="viz_1" style="justify-content: center;"></div>
+<div style="background-color: #D0B49F; justify-content: center; text-align: center;">
+  <div id="label" style="padding-top: 30px; padding-bottom: 30px;color: #3a5574; text-align: center">
+    Coffee Exports and Consumption of Coffee
+  </div>
+  <div id="viz_1" style="justify-content: center;"></div>
+  <div id="text" style="padding-top: 30px; padding-left: 110px; padding-bottom: 30px;justify-content: center; text-align: left; width: 1240px;">
+    <span>From the cholorpleth maps above of </span> 
+    <span style="color: #3a5574; font-size: 20pt; font-weight: bold;">Yearly Export of Coffee</span>
+    <span> and </span>
+    <span style="color: #3a5574; font-size: 20pt; font-weight: bold;">Domestic Consumption of Coffee, Brazil </span>
+    <span> stands out in both maps as the country with </span>
+    <span style="color: #3a5574; font-size: 20pt; font-weight: bold;">Highest Export and Domestic Consumption</span>
+    <span> of coffee.</span>
+  </div>
+
 
 </div>
 
 <div style="background-color: #E4D4C8; justify-content: left;text-align: center;">
-  <h1 id="label" style="padding-left: 100px; padding-top: 20px;color: #2F435A; position: relative;"> Coffee Exports and Gross Opening Stocks</h1>
+  <h1 id="label" style="padding-left: 100px; padding-top: 20px; padding-bottom: 30px; color: #3a5574; position: relative;"> Coffee Exports and Gross Opening Stocks</h1>
   <div class="flex">
-    <div id="scatter" class= "flex-child left" style="padding-right: 600px;"></div>
-    <div id="text" class= "flex-child right" style="padding-left: 750px; width: 500px; text-align: justify; position: absolute;">
-      <span style="color: #2F435A; font-size: 20pt; font-weight: bold;">Gross Opening of stock prices</span> 
-      <span>exporting countries are plotted against </span> 
-      <span style="color: #2F435A; font-size: 20pt; font-weight: bold;">Total Coffee Export</span>
-      <span>of each country(In thousand 60-kg bags) in order to find if there is a big correlation between the two factors or does the quality and origin of the coffee beans matter more?</span>
+    <div id="scatter" class= "flex-child left" style="padding-right: 700px; padding-bottom: 30px;"></div>
+    <div id="text" class= "flex-child right" style="padding-left: 750px; padding-top: 80px;width: 600px; text-align: justify; position: absolute;">
+      <div>
+        <span style="color: #3a5574; font-size: 20pt; font-weight: bold;">Gross Opening of stock prices</span> 
+        <span>exporting countries are plotted against </span> 
+        <span style="color: #3a5574; font-size: 20pt ; font-weight: bold;">Total Coffee Export</span>
+        <span>of each country(In thousand 60-kg bags) in order to find if there is a big correlation between the two factors or does the quality and origin of the coffee beans matter more?</span>
+      </div>
+      <div style="padding-top: 60px;">
+        <span>
+          According to the scatterplot, there is only a vague correlation, suggesting that there are more factors than quantity that determines the price of coffee beans.
+          The country that has the highest export and also gross opening stock is  
+        </span>
+        <span style="color: #3a5574; font-size: 20pt; font-weight: bold;">Brazil</span>
+        <span>
+          .While the lowest belongs to 
+        </span>
+        <span style="color: #3a5574; font-size: 20pt; font-weight: bold;">Nepal</span>
+        <span>.</span>
+      </div>
     </div>
   </div>
+</div>
+
+<div style="background-color: #D0B49F; justify-content: center; text-align: center;">
+  <div id="line" style="padding-top: 30px;"></div>
+  <div id="text" style="padding-top: 30px;">
+    <span>From the line chart of </span>
+    <span style="color: #3a5574; font-size: 20pt; font-weight: bold;">Total Exports</span> 
+    <span> each year independant of countries, we can see that the demand for coffee is gradually </span>
+    <span style="color: #3a5574; font-size: 20pt; font-weight: bold;">Increasing</span>
+    <span> each passing year.</span>
+  </div>
+
 </div>
 
 
@@ -53,9 +89,20 @@
 
 <script type="text/javascript">
 
-  var spec2 = "js/scatterplot.vg.json";
+  var spec2 = "js/line.vg.json";
   
-  vegaEmbed('#scatter', spec2).then(function(result) {
+  vegaEmbed('#line', spec2).then(function(result) {
+    // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
+  }).catch(console.error);
+  
+
+</script>
+
+<script type="text/javascript">
+
+  var spec3 = "js/scatterplot.vg.json";
+  
+  vegaEmbed('#scatter', spec3).then(function(result) {
     // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
   }).catch(console.error);
   
