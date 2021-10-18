@@ -13,7 +13,7 @@
 
     "width": 1200,
     "height": 200,
-    "mark": "line",
+    "mark": "trail",
     "params": [
         {
             "name": "brush",
@@ -29,6 +29,10 @@
             "field": "Total",
             "type": "quantitative",
             "title": "Total Exports"
+        },
+        "size":{
+            "field": "Total",
+            "type": "quantitative"
         }
     }
 }
