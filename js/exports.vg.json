@@ -59,14 +59,24 @@
                     "projection": {
                         "type": "equirectangular"
                     },
+                    "params": [
+                        {
+                            "name": "brush",
+                            "select": {"type": "point", "on": "mouseover"}
+                        }
+                    ],
                     "mark": {
                         "type": "geoshape"
                         },
                     "encoding": {
                         "color": {
-                        "field": "Yearly Export",
-                        "type": "quantitative",
-                        "scale": {"type": "linear", "scheme": "tealblues"}
+                            "condition":{
+                                "param": "brush",
+                                "field": "Yearly Export",
+                                "type": "quantitative",
+                                "scale": {"type": "linear", "scheme": "tealblues"}
+                            },
+                            "value": "darkgrey"
                         },
                         "tooltip": [
                         {"field": "properties.NAME", "type": "nominal", "title": "Country"},
@@ -128,7 +138,7 @@
                     },
                     "params": [
                         {
-                            "name": "paintbrush",
+                            "name": "brush",
                             "select": {"type": "point", "on": "mouseover"}
                         }
                     ],
@@ -137,11 +147,13 @@
                         },
                     "encoding": {
                         "color": {
-        
+                            "condition":{
+                                "param": "brush",
                                 "field": "Domestic Consumption",
                                 "type": "quantitative",
                                 "scale": {"type": "linear", "scheme": "reds"}
-        
+                            },
+                            "value": "darkgrey"
         
                         },
         
